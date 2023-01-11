@@ -1,0 +1,3 @@
+rootProject.name = "eventuate-examples-common"
+
+include 'eventuate-examples-common-money'
