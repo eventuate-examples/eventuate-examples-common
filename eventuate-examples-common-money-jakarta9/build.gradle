@@ -3,3 +3,8 @@ dependencies {
     implementation "commons-lang:commons-lang:2.6"
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
