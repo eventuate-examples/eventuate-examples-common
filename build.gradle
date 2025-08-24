@@ -27,7 +27,6 @@ subprojects {
 
     if (!project.name.endsWith("-bom"))
         dependencies {
-            testImplementation "junit:junit:4.12"
         }
 }
 
@@ -42,4 +41,7 @@ gradle.projectsEvaluated {
 
 configurations.all {
     resolutionStrategy.cacheDynamicVersionsFor 10, 'minutes'
+}
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
 }
