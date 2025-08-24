@@ -27,6 +27,8 @@ subprojects {
 
     if (!project.name.endsWith("-bom"))
         dependencies {
+            testImplementation "org.junit.jupiter:junit-jupiter:$junitVersion"
+            testRuntimeOnly "org.junit.platform:junit-platform-launcher:$junitPlatformLauncherVersion"
         }
 }
 
